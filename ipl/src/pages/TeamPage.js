@@ -31,8 +31,8 @@ export const TeamPage = () => {
         Wins / Losses
         </div>
 
-      <div>
-        <MatchDetailCard className="match-detail-card" teamName={team.teamName} match={team.matches[0]} />
+      <div className="match-detail-section">
+        <MatchDetailCard  teamName={team.teamName} match={team.matches[0]} />
       </div>
       {team.matches.slice(1).map((match) => (
         <MatchSmallCard teamName={team.teamName} match={match} />
