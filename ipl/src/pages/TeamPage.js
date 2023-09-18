@@ -24,13 +24,15 @@ export const TeamPage = () => {
 
   return (
     <div className="TeamPage">
-      <div>
+      <div className="team-name-section">
         <h1>{team.teamName}</h1>
       </div>
-      <div>Wins / Losses</div>
+      <div className="win-loss-section">
+        Wins / Losses
+        </div>
 
       <div>
-        <MatchDetailCard teamName={team.teamName} match={team.matches[0]} />
+        <MatchDetailCard className="match-detail-card" teamName={team.teamName} match={team.matches[0]} />
       </div>
       {team.matches.slice(1).map((match) => (
         <MatchSmallCard teamName={team.teamName} match={match} />

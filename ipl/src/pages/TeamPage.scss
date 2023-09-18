@@ -5,4 +5,12 @@
     grid-column-gap: 10px;
     grid-row-gap: 10px;
 
+    .team-name-section{
+        grid-column: span 3;
+    
+    }
+    .match-detail-section{
+        grid-column: span 4;
+    }
+
 }
