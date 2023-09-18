@@ -7,18 +7,16 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <switch>
-          <Routes>
-            <Route
-              path="/teams/:teamName/matches/:year"
-              element={<MatchPage />}
-            />
-            <Route path="/teams/:teamName" element={<TeamPage />} />
-          </Routes>
-        </switch>
+        <Routes>
+          <Route
+            path="/teams/:teamName/matches/:year"
+            element={<MatchPage />}
+          />
+          <Route path="/teams/:teamName" element={<TeamPage />} />
+        </Routes>
       </Router>
     </div>
-  ); 
+  );
 }
 
 export default App;
