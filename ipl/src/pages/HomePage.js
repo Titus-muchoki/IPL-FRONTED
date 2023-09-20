@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { TeamTile } from '../components/TeamTile';
-import './TeamPage.scss'
+import './HomePage.scss';
 
  export const HomePage = () => {
     const[teams, setTeams] = useState([])
@@ -24,5 +24,3 @@ import './TeamPage.scss'
 </div>
   )
 }
-
-// export default HomePage
